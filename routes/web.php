@@ -18,4 +18,5 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/admin', 'HomeController@index')->name('admin');
-Route::get('/admin/manage-users', 'HomeController@manage-users');
+Route::resource('/admin/manage-users', 'Admin\ManageUsers');
+   // ->middleware(['permission:manage-users']);

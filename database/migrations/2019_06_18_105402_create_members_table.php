@@ -15,9 +15,7 @@ class CreateMembersTable extends Migration
     {
         Schema::create('members', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name');
-            $table->string('title');
-            $table->bigInteger('fb_id');
+            $table->string('fb_id');
             $table->string('first_name');
             $table->string('last_name');
             $table->integer('gender');

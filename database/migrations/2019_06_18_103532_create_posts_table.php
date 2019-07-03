@@ -20,6 +20,7 @@ class CreatePostsTable extends Migration
             $table->string('link');
             $table->string('screen_url');
             $table->bigInteger('page_id');
+            $table->bigInteger('member_id');
         });
     }
 
